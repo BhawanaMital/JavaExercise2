@@ -39,6 +39,8 @@ public class FactorialRange {
         String outp = "";
         BigDecimal ob1 = new BigDecimal(1);
         System.out.println("List of factorils under long value is");
+
+        //Calculating the Factorial according the bound
         for (int i = 1; ; i++) {
             if (ob1.compareTo(new BigDecimal(Long.MAX_VALUE)) < 0 && ob1.multiply(new BigDecimal(i+1)).compareTo(new BigDecimal(Long.MAX_VALUE))<0) {
                 ob1 = ob1.multiply(new BigDecimal(i));

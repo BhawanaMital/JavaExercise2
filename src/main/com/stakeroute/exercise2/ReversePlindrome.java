@@ -12,11 +12,14 @@ public class ReversePlindrome {
         int sum=0;
         int temp=n;
 
+        //Reversing the number
         while (n > 0) {
             r = n % 10;
             sum = (sum * 10) + r;
             n = n / 10;
         }
+
+        //Checking whether the reversed input matches the input number
         if (temp == sum)
             return ("palindrome number");
         else
